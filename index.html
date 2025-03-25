@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mes-container hide">
+        <p id="msg">Winner!</p>
+        <button id="new-btn">New Game</button>
+   </div>
+
+    <main>
+    <h1>Tic Tac Toe</h1>
+    <!--.container centers everything on the screen.
+   .game arranges the buttons in a 3x3 grid.
+   ->if you remove .container, the .game div will be horizontally centered, but it will stay at the top 
+   unless extra styles are added cuz body does not have display: flex; align-items: center; by default. -->
+    <div class="container">  
+    <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+    </div>
+   </div>
+   <button id="reset">Reset Me</button>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
